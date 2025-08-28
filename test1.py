@@ -1,5 +1,5 @@
 ################################################################################
-# Esempio TSP in QUBO con 3 nodi (stile stampe MVC)
+# Esempio TSP in QUBO con 3 nodi
 ################################################################################
 from pyqubo import Binary, Constraint, Placeholder
 from dimod import ExactSolver
