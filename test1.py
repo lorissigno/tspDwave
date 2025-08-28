@@ -138,6 +138,20 @@ decoded_sa = ham_internal.decode_sampleset(sa_sampleset, feed_dict={"A": A_val, 
 stampa_tabella(decoded_sa, tag="SimulatedAnnealing")
 
 
+# === D-Wave LeapHybridSampler (ibrido) ===
+#   print("\n=== D-Wave LeapHybridSampler ===")
+#   try:
+#       hybrid = LeapHybridSampler()
+#       # time_limit in secondi (rispettare i min/max del solver)
+#       hyb_samples = hybrid.sample(bqm, time_limit=5)
+#       best_hyb, tour_hyb, energy_hyb = decode_best_feasible(model, hyb_samples, feed, N)
+#       if tour_hyb:
+#           print("Tour:", tour_hyb, "Energy:", energy_hyb)
+#       else:
+#           print("Nessuna soluzione valida")
+#   except Exception as e:
+#       print("LeapHybridSampler non disponibile:", e)
+#
 #   # === D-WaveSampler (QPU reale) ===
 #   print("\n=== D-WaveSampler (QPU) ===")
 #   try:
